@@ -26,3 +26,10 @@ body {
   background: image_url('bg2.png');
   box-shadow: 0px 1px 3px #2a2a2a;
 }
+
+.navbar-inverse .navbar-brand {
+  color: #484D4A;
+  font-family: "Helvetica Neue", Helvetica, san-serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
