@@ -83,6 +83,7 @@
 <h1>Add a photo</h1>
 <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
   <%= f.input :caption %>
+  <%= f.input :picture %>
   <%= f.submit "Add a Caption", class: 'btn btn-primary' %>
 <% end %>
 
@@ -108,8 +109,11 @@
   <% @place.photos.each do |photo| %>
     <div class="col-12 col-sm-6">
       <blockquote>
+        <% if photo.picture.present? %>
+          <%= image_tag photo.picture.url %>
+        <% end %>
         <% if photo.caption.present? %>
-          <b><%= photo.caption %></b>
+          <%= photo.caption %>
         <% end %>
       </blockquote>
     </div>
