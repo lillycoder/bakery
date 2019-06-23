@@ -33,3 +33,64 @@ body {
   font-weight: 600;
   letter-spacing: -0.3px;
 }
+
+.page_style {
+
+ .page-link {
+ 
+  position: relative;
+ 
+  display: block;
+ 
+  padding: 0.5rem 0.75rem;
+ 
+  margin-left: -1px;
+ 
+  line-height: 1.25;
+ 
+  color: black;
+ 
+  background-color: #CFCFCE;
+ 
+  border: 1px solid #CFCFCE;
+ 
+}
+ 
+.page-item.disabled .page-link {
+ 
+  color: #838385;
+ 
+  pointer-events: none;
+ 
+  cursor: auto;
+ 
+  background-color: #DEDDD5;
+ 
+  border: none;
+ 
+}
+ 
+.page-item.active .page-link {
+ 
+  z-index: 1;
+ 
+  color: #fff;
+ 
+  background-color: #676545;
+ 
+  border: none;
+ 
+}
+ 
+.page-link:focus, .page-link:hover {
+ 
+  color: #fff;
+ 
+  text-decoration: none;
+ 
+  background-color: #CFCFCE;
+ 
+  border: none;
+ 
+}
+}
