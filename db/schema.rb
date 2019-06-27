@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_06_23_212451) do
     t.integer "place_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["place_id"], name: "index_comments_on_place_id"
     t.index ["user_id", "place_id"], name: "index_comments_on_user_id_and_place_id"
   end
 
