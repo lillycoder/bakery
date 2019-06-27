@@ -1,5 +1,4 @@
 class PhotosController < ApplicationController
-require 'resolv-replace'
 
   def create
     @place = Place.find(params[:place_id])
