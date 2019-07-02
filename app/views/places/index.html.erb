@@ -1,5 +1,47 @@
 <!-- Begin of Display on front page for individual item -->
 
+<!-- Carousel Bootstrap code begin -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+  <!--slider 1 -->  
+    <div class="carousel-item active">
+      <%= image_tag 'slider1.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-md-block">
+        <h3>Best Wedding Cake</h3>
+      </div>
+    </div>
+<!-- slider 2 -->
+    <div class="carousel-item">
+      <%= image_tag 'slider2.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-md-block">
+        <h3>Great Thankyou cake</h3>
+      </div>
+    </div>
+<!-- slider 3 -->
+    <div class="carousel-item">
+      <%= image_tag 'slider3.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-md-block">
+        <h3>Awsome Chocolate cake</h3>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- Carousel Boostrap code end -->
+
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
     <h1><%= link_to place.name, place_path(place) %></h1><br />
