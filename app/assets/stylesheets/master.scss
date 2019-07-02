@@ -161,3 +161,20 @@ blockquote p {
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+.photo_arrangment {
+  width: 300px;
+  height: 200px;
+  border: none;
+  padding: 5px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.photo_arrangment > img, {
+  width: 100%;
+  max-height: 170px
+}
+
+
+
