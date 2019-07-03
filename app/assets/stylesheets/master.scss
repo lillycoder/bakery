@@ -11,6 +11,10 @@
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
+  color: #484D4A;
+  font-family: "Helvetica Neue", Helvetica, san-serif;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 h3 {
@@ -164,7 +168,7 @@ blockquote p {
 
 .photo_arrangment {
   width: 300px;
-  height: 200px;
+  height: 250px;
   border: none;
   padding: 5px;
   margin: 20px;
@@ -173,7 +177,17 @@ blockquote p {
 
 .photo_arrangment > img, {
   width: 100%;
-  max-height: 170px
+  max-height: 220px
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 10px;
 }
 
 
