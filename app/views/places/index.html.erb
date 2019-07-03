@@ -68,14 +68,16 @@
 
 <!-- Post the last photo -->
 <div class="col-12">
-      <p class="photo_arrangment">
+      
         <% if place.photos.last.present? %>
+        <p class="photo_arrangment">
         <!--current line giving problems -->
           <%= image_tag place.photos.last.picture.url %>
           <!-- end of current line giving problems -->
           <%= place.photos.last.caption %>
+        </p>
         <% end %>
-      </p>
+      
     </div>
 <!-- End of posting the last photo -->
   </div>

@@ -190,5 +190,34 @@ hr {
   border-width: 10px;
 }
 
+.btn-info {
+        background-color: #B2C5BB;
+        color: #464847;
+        border-color: #B2C5BB;
+        border-radius: 10px;
+    }
+
+.btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active    {
+        background-color: #5D6D64;
+        color: #FFF;
+        border-color: #5D6D64;
+    }
+
+.btn-danger {
+        background-color: #535454;
+        color: white;
+        border-color: #535454;
+        border-radius: 10px;
+    }
+    .btn-danger:hover,
+    .btn-danger:focus,
+    .btn-danger:active {
+        background-color: #202121;
+        color: #FFF;
+        border-color: #202121;
+    }   
+
 
 
