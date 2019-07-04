@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background: image_url('bg1.png');
-   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+   font-family: "Helvetica Neue", Helvetica, san-serif;
  }
 
 .navbar {
@@ -126,6 +126,7 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  font-family: "Helvetica Neue", Helvetica, san-serif;
 }
 
 blockquote:before {
@@ -137,7 +138,7 @@ blockquote:before {
   vertical-align: -0.4em;
 }
 blockquote p {
-  display: inline;
+  display: list-item;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
@@ -172,12 +173,18 @@ blockquote p {
   border: none;
   padding: 5px;
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.0);
+  font: red;
+  font-family: "Helvetica Neue", Helvetica, san-serif;
 }
 
 .photo_arrangment > img, {
   width: 100%;
-  max-height: 220px
+  max-height: 220px;
+}
+
+.photo_arrangment_caption {
+  float: right;
 }
 
 hr { 
@@ -188,6 +195,10 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 10px;
+}
+
+.hr_item {
+  border-width: 2px;
 }
 
 .btn-info {
@@ -203,6 +214,7 @@ hr {
         background-color: #5D6D64;
         color: #FFF;
         border-color: #5D6D64;
+        font-family: "Helvetica Neue", Helvetica, san-serif;
     }
 
 .btn-danger {
@@ -210,6 +222,7 @@ hr {
         color: white;
         border-color: #535454;
         border-radius: 10px;
+      font-family: "Helvetica Neue", Helvetica, san-serif;
     }
     .btn-danger:hover,
     .btn-danger:focus,
@@ -217,7 +230,35 @@ hr {
         background-color: #202121;
         color: #FFF;
         border-color: #202121;
+        font-family: "Helvetica Neue", Helvetica, san-serif;
     }   
+
+    small {
+     font-style: italic;
+     font-family: "Helvetica Neue", Helvetica, san-serif;
+    }
+
+    .p_location {
+      text-transform: capitalize;
+    }
+
+    .h1_capitalize {
+      text-transform: uppercase;
+      font: black;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    a {
+      font: black;
+    }
+
+    .link-to-color {
+      color: #55552b;
+      font-weight: bold;
+    }
+
+
 
 
 

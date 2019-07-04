@@ -1,9 +1,8 @@
 <div class="booyah-box col-10 offset-1">
-  <h1><%= @place.name %></h1>
-  <i><%= @place.address %></i>
+  <h1 class="h1_capitalize"><%= @place.name %></h1>
   <br />
-  <br />
-  <p><%= @place.description %></p>
+  <p class="p_location">Location:  <%= @place.address %></p>
+  <p>Highlights:  <%= @place.description %></p>
   
   <% if @place.latitude.present? && @place.longitude.present? %>
 
@@ -49,7 +48,6 @@
 <!-- End of Section for Adding Photo Edit and Delete Button -->  
 </div>
 
-<br />
 <br />
 <hr>
 <div class="clear"></div>
@@ -122,8 +120,9 @@
         <% if comment.humanized_rating.present? %>
           <b><%= comment.humanized_rating %></b>
         <% end %>
+        ...
         <%= comment.message %>
-       <small><%= comment.user.email %></small>
+       <small>(Submitted by: <%= comment.user.email %>)</small>
       </blockquote>
     </div>
   <% end %>
@@ -131,7 +130,9 @@
 </div>
 <hr>
 
-
+<!-- photo title here -->
+<div class="col-10 offset-1">
+  <h1 class="float-left">Photos</h1>
 
 <!-- Display Photo-->
 
@@ -143,14 +144,14 @@
         <% if photo.picture.present? %>
           <%= image_tag photo.picture.url %>
           <br />
-          
             <%= photo.caption %>
-          
         <% end %>
       </p>
     </div>
   <% end %>
 </div>
+</div>
+
 
   <!-- End of Display Photo -->
 

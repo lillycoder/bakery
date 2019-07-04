@@ -10,23 +10,23 @@
   <div class="carousel-inner" role="listbox">
   <!--slider 1 -->  
     <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider4.jpg', class: 'img-fluid' %>
       <div class="carousel-caption d-md-block">
-        <h3>Best Wedding Cake</h3>
+        <h3>Check out below for great places to buy amazing cookies!</h3>
       </div>
     </div>
 <!-- slider 2 -->
     <div class="carousel-item">
-      <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider5.jpg', class: 'img-fluid' %>
       <div class="carousel-caption d-md-block">
-        <h3>Great Thankyou cake</h3>
+        <h3>Northern Virginia - Haven for a variety of fresh bread and rolls!</h3>
       </div>
     </div>
 <!-- slider 3 -->
     <div class="carousel-item">
-      <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider6.jpg', class: 'img-fluid' %>
       <div class="carousel-caption d-md-block">
-        <h3>Awsome Chocolate cake</h3>
+        <h3>European style bakeries at every corner!</h3>
       </div>
     </div>
   </div>
@@ -44,12 +44,14 @@
 
 <% @places.each do |place| %>
   <div class="booyah-box col-10 offset-1">
-    <h1><%= link_to place.name, place_path(place) %></h1><br />
-    <p><%= place.address %></p>
-    <p><%= place.description %></p><br />
+    <h1 class="h1_capitalize"><%= link_to place.name, place_path(place), class: "link-to-color" %></h1><br />  
+    <p class="p_location">Location: <%= place.address %></p>
+    <p>Highlights:  <%= place.description %></p><br />
     <% if place.user.present? %>
-      <small><%= place.user.email %></small>
+      <small>Submitted by: <%= place.user.email %></small>
     <% end %>
+    <br />
+    <hr class="hr_item">
 
 <!-- Pullling in the last comment -->
     <% if place.comments.present? %>
@@ -59,8 +61,11 @@
           <% if place.comments.last.humanized_rating.present? %>
             <b><%= place.comments.last.humanized_rating %></b>
           <% end %>
+          ...
           <%= place.comments.last.message %>
-          <small><%= place.comments.last.user.email %></small>
+          <small>
+            (Submitted by:
+            <%= place.comments.last.user.email %>)</small>
         </blockquote>
       </div>
     <% end %>
